@@ -1,0 +1,111 @@
+.section-light {
+    padding: 2rem 0;
+    background-color: ./imagem/fundo admac.jpgf8f9fa;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(100%);
+  }
+
+  .card-animated:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+  }
+
+  footer {
+    background-color: ./imagem/fundo admac.jpg333;
+    color: white;
+  }
+
+  .section-dark {
+    background-color: ./imagem/fundo admac.jpg333;
+    color: white;
+    padding: 40px 0;
+  }
+
+  .card {
+    background-color: ./imagem/fundo admac.jpg444;
+    border: none;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .card img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  .btn-primary {
+    background-color: ./imagem/fundo admac.jpg0069d9;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background-color: ./imagem/fundo admac.jpg0056b3;
+  }
+
+  .carousel-img {
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  @keyframes moveText {
+    0% {
+      transform: translateX(100%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .moving-text {
+    white-space: nowrap;
+    display: inline-block;
+    animation: moveText 10s linear infinite;
+    font-size: 2rem;
+    color: white;
+  }
+
+  .text-container {
+    overflow: hidden;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+  }
+  /*anivesario*/
+  body {
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+}
+.card {
+    background-color: #222; /* Fundo do card preto */
+    color: #fff; /* Texto branco */
+    border: none; /* Sem borda */
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.card-title {
+    font-size: 1.75rem;
+    color: #fff;
+}
+.card-text {
+    color: #ccc; /* Cor do texto secundário */
+}
+.card-img-top {
+    border-radius: 10px 10px 0 0; /* Bordas arredondadas na imagem superior */
+}
+
+  

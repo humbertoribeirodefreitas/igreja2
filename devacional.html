@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Devocional</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        .card {
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            transition: transform 0.3s;
+            text-align: center;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .modal-content {
+            background-color: #000;
+        }
+        .navbar {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>ADMAC</h1>
+        <a href="index.html">Voltar</a>
+    </div>
+ <!-- Navbar -->
+<!-- Conteúdo Principal -->
+<section>
+    <div class="container">
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./imagem/menssagem biblica/joao-3-16-2.jpg" alt="Imagem Devocional 1" data-bs-toggle="modal" data-bs-target="#imagemModal" onclick="showImage('./imagem/menssagem biblica/joao-3-16-2.jpg')">
+                    <p>“Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito...” - João 3:16</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./imagem/menssagem biblica/salmos-23-1-2.jpg" alt="Imagem Devocional 2" data-bs-toggle="modal" data-bs-target="#imagemModal" onclick="showImage('')">
+                    <p>“O Senhor é meu pastor e nada me faltará.” - Salmo 23:1</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./imagem/menssagem biblica/FILIPENSES-4.13-1.jpg" alt="Imagem Devocional 3" data-bs-toggle="modal" data-bs-target="#imagemModal" onclick="showImage('./imagem/menssagem biblica/FILIPENSES-4.13-1.jpg')">
+                    <p>“Tudo posso naquele que me fortalece.” - Filipenses 4:13</p>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./imagem/menssagem biblica/romanos-8-31-2.jpg" alt="Imagem Devocional 4" data-bs-toggle="modal"  data-bs-target="#imagemModal" onclick="showImage('./imagem/menssagem biblica/romanos-8-31-2.jpg')">
+                    <p>“Se Deus é por nós, quem será contra nós?” - Romanos 8:31</p>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./imagem/menssagem biblica/mateus 6 3.jpg" alt="Imagem Devocional 5" data-bs-toggle="modal" data-bs-target="#imagemModal" onclick="showImage('./imagem/menssagem biblica/mateus 6 3.jpg')">
+                    <p>“Buscai primeiro o Reino de Deus...” - Mateus 6:33</p>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./imagem/menssagem biblica/proverbios-3-5-6.jpg" alt="Imagem Devocional 6" data-bs-toggle="modal" data-bs-target="#imagemModal" onclick="showImage('./imagem/menssagem biblica/proverbios-3-5-6.jpg')">
+                    <p>“Confia no Senhor de todo o teu coração...” - Provérbios 3:5</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal para exibição da imagem -->
+<div class="modal fade" id="imagemModal" tabindex="-1" aria-labelledby="imagemModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img id="modalImage" src="./imagem/menssagem biblica/" class="img-fluid" alt="Imagem Devocional">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Script para alterar a imagem no modal -->
+<script>
+    function showImage(src) {
+        document.getElementById('modalImage').src = src;
+    }
+</script>
+ <!-- Footer -->
+ <footer class="text-center p-4 bg-dark text-white">
+    <p>Siga-nos nas redes sociais:</p>
+    <a href="https://chat.whatsapp.com/Km4ACCzw1Bl3BcxkW8oxnU" class="btn btn-success"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+    <a href="https://www.instagram.com/p/DAqg21nsKbW/?igsh=eGNqb2xndzMxdzF5" class="btn btn-primary"><i class="bi bi-instagram"></i> Instagram</a>
+    <a href="https://www.facebook.com/profile.php?id=100011588501862" class="btn btn-primary"><i class="bi bi-facebook"></i> Facebook</a>
+    <a href="https://www.youtube.com/live/Fi2Ri7_6BXc?si=jPut75pTyh9HyGSa" class="btn btn-danger"><i class="bi bi-youtube"></i> YouTube</a>
+  </footer>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
