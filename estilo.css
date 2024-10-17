@@ -108,4 +108,20 @@
     border-radius: 10px 10px 0 0; /* Bordas arredondadas na imagem superior */
 }
 
+/* Customização do mapa para responsividade */
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border: 0;
+}
   
